@@ -31,48 +31,85 @@
         </header>
     </div>
 
-    <section>
+    <section class="project-requirements">
         <h2>Project Scope & Requirements</h2>
 
-        <h3>1. Target Users</h3>
-        <ul>
-            <li>Target users are restaurant customers looking to learn more about the restaurant, including location,
-                menu, and general information.</li>
-            <li>Users will access the app on both mobile and desktop devices.</li>
-            <li>Users should be able to order food online through the website using an external food ordering service.
-            </li>
-            <li>The app should be easy to use, quick to navigate, and mobile-friendly.</li>
-        </ul>
+        <div class="requirement-section">
+            <h3>1. Target Users</h3>
+            <ul>
+                <li><strong>Customers</strong>
+                    <ul>
+                        <li>Want information about the restaurant, menu, and location</li>
+                        <li>Access via mobile and desktop (responsive design)</li>
+                        <li>Can place online orders (pickup or delivery)</li>
+                    </ul>
+                </li>
+                <li><strong>Admin users (restaurant staff/managers)</strong>
+                    <ul>
+                        <li>Manage menu items, track orders, view customer info</li>
+                        <li>Require secure login and access to an admin dashboard</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-        <h3>2. Static Information</h3>
-        <ul>
-            <li>Company / Restaurant name</li>
-            <li>Address and location</li>
-            <li>Contact information (phone number, email)</li>
-            <li>Menu items and descriptions</li>
-            <li>Information about the restaurant</li>
-        </ul>
+        <div class="requirement-section">
+            <h3>2. Basic, Static Information</h3>
+            <ul>
+                <li>Company name</li>
+                <li>Address and location</li>
+                <li>Contact information (phone, email, social media links)</li>
+                <li>Menu items (names, descriptions, prices, images)</li>
+                <li>Restaurant hours</li>
+            </ul>
+        </div>
 
-        <h3>3. Design Elements</h3>
-        <ul>
-            <li>Simple and clean layout</li>
-            <li>Easy navigation with clear sections</li>
-            <li>Strong focus on displaying the menu and food items</li>
-            <li>Information should be easy to find</li>
-            <li>Avoid cluttered layouts or confusing navigation</li>
-        </ul>
+        <div class="requirement-section">
+            <h3>3. Design Elements</h3>
+            <ul>
+                <li>Information is easy to find</li>
+                <li>Focus on menu / food visuals</li>
+                <li>Responsive design for mobile and desktop</li>
+                <li>Clean, uncluttered interface</li>
+                <li>Reflect restaurant branding (colors, fonts, style)</li>
+            </ul>
+        </div>
 
-        <h3>4. Data Management</h3>
-        <ul>
-            <li>Menu information</li>
-            <li>Restaurant hours / schedule</li>
-        </ul>
+        <div class="requirement-section">
+            <h3>4. Data Management</h3>
+            <ul>
+                <li><strong>Customer-facing data:</strong>
+                    <ul>
+                        <li>Menu information (names, descriptions, prices, availability)</li>
+                        <li>Restaurant schedule (opening hours, special events)</li>
+                        <li>Orders (items, quantity, pickup/delivery info, order status)</li>
+                    </ul>
+                </li>
+                <li><strong>Admin-facing data:</strong>
+                    <ul>
+                        <li>Real-time order tracking (status, delivery/pickup info)</li>
+                        <li>Customer information associated with orders</li>
+                        <li>Ability to update menu items, prices, availability</li>
+                        <li>Optional: Analytics (popular items, sales trends, peak ordering times)</li>
+                    </ul>
+                </li>
+                <li><strong>General:</strong>
+                    <ul>
+                        <li>Shared database between customer interface and admin dashboard</li>
+                        <li>Updates in admin panel reflect instantly on customer-facing pages</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-        <h3>5. Interactive Elements</h3>
-        <ul>
-            <li>Interactive map showing restaurant location</li>
-            <li>Online ordering functionality</li>
-        </ul>
+        <div class="requirement-section">
+            <h3>5. Interactive Elements</h3>
+            <ul>
+                <li>Online ordering tool with cart and checkout</li>
+                <li>Menu filtering (e.g., dietary preferences, specials)</li>
+                <li>Admin dashboard for order management</li>
+            </ul>
+        </div>
     </section>
 
 </body>
