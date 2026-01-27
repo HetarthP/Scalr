@@ -1,14 +1,15 @@
 :root {
     --c1: #1a4f75;
     --c2: #2596be;
-    --c3: #27c1f2;
+    --c3: #201f31;
     --c4: #24b9ef;
     --c5: #2d2b44;
+    --c6: #BADEFF;
 }
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color:;
+    background-color: var(--c3);
     font-size: 14px;
     padding-top: 167px;
     margin: 0;
@@ -17,27 +18,31 @@ body {
 header {
     font-size: 167px;
     font-weight: bold;
-    line-height: 1.5;
-    color: var(--c1);
+    color: var(--c4);
+}
+
+header.project{
+    font-size: 67px;
 }
 
 header.sub{
     font-size: 130%;
-    color: var(--c3)
+    
+    color: var(--c6)
 }
 
 nav {
     display: flex;
-    opacity:0.6;
-    background-color: var(--c1);
-    justify-content: center;
+    opacity: 0.95;
+    background-color: var(--c5);
+    justify-content: right;
     position: fixed;
     gap: 40px;
-    padding: 5px 0;
+    padding: 15px 40px;
     border-radius: 10px;
     width: 80%;
-    top: 20px;
-    border: 2px groove var(--c1);
+    top: 30px;
+    border: 2px solid var(--c3);
     min-width: 500px;
 }
 
@@ -53,13 +58,18 @@ nav a{
     transition: background 0.3s;
 }
 
-.image {
-    width: 300px;
+nav img{
+    align-self: left;
+}
+
+.logo {
+    width: 35px;
+    height: 35;
     height: auto;
 }
 
 nav a:hover {
-    background-color: var(--c5);
+    background-color: var(--c6);
 }
 
 .flex-container {
@@ -68,3 +78,17 @@ nav a:hover {
     align-items: center;
 }
 
+.box {
+    background-color: var(--c5);
+    color: white;
+    width: 670px;
+    padding: 10px 20px;
+    line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.box h3{
+    color:#BADEFF;
+}
