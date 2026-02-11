@@ -79,6 +79,11 @@ nav a:hover {
     gap: 10px;
 }
 
+.row{
+    flex-direction: row;
+}
+
+
 .box {
     background-color: var(--c5);
     color: white;
@@ -90,7 +95,21 @@ nav a:hover {
     border-radius: 20px;
 }
 
-.box h3 {
+.reg {
+    background-color: var(--c6);
+    width: 30%;
+    border-radius: 10px;
+    border: solid 2px white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.reg h2{
+    color: var(--c1);
+
+}
+
+.box h3{
     color:#BADEFF;
 }
 
