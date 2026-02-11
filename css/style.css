@@ -76,6 +76,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .box {
@@ -89,6 +90,19 @@ nav a:hover {
     border-radius: 20px;
 }
 
-.box h3{
+.box h3 {
     color:#BADEFF;
+}
+
+.button {
+    background-color: white;
+    color: var(--c1);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 100px;
+    border: solid 2px var(--c6);
+    border-radius: 15px;
+    font-weight: bold;
 }
