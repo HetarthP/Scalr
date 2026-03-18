@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Plan - Scalr</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <nav>
+            <img src="../images/logo.png" class="logo">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About Us</a>
+            <a href="../showcase.html">Showcase</a>
+            <a href="../project.html">Projects</a>
+        </nav>
+    </div>
+
+    <div class="flex-container">
+        <header class="project">Development Plan</header>
+        <header class="sub">The Taste of Qin Yun Restaurant App</header>
+
+        <div class="box">
+            <h3>Team Members</h3>
+            <p>Braden Chan, Harry Kwok, Hetarth Parikh, Leon Li, Uzair Sowdagar</p>
+
+            <h3>Client</h3>
+            <p>Feng</p>
+
+            <h3>App Name</h3>
+            <p>The Taste of Qin Yun</p>
+        </div>
+
+        <div class="box">
+            <h3>Purpose</h3>
+            <p>Restaurant App that has online ordering.</p>
+        </div>
+
+        <div class="box">
+            <h3>Data Description</h3>
+            <h4>Table: MenuItems</h4>
+            <p><strong>Purpose:</strong> Stores all menu items available to customers</p>
+            <p><strong>Data Stored:</strong> Item name, description, price, image, and availability</p>
+            <p><strong>Fields:</strong></p>
+            <ul>
+                <li>item_id (INT, PRIMARY KEY)</li>
+                <li>name (VARCHAR)</li>
+                <li>description (TEXT)</li>
+                <li>price (DECIMAL)</li>
+                <li>image_url (VARCHAR)</li>
+                <li>availability (BOOLEAN)</li>
+            </ul>
+
+            <h4>Table: Orders</h4>
+            <p><strong>Purpose:</strong> Stores customer orders</p>
+            <p><strong>Data Stored:</strong> Order details including items, quantities, and status</p>
+            <p><strong>Fields:</strong></p>
+            <ul>
+                <li>order_id (INT, PRIMARY KEY)</li>
+                <li>customer_id (INT)</li>
+                <li>order_status (VARCHAR)</li>
+                <li>order_type (VARCHAR) (pickup/delivery)</li>
+                <li>total_price (DECIMAL)</li>
+                <li>created_at (DATETIME)</li>
+            </ul>
+
+            <h4>Table: OrderItems</h4>
+            <p><strong>Purpose:</strong> Links orders to menu items</p>
+            <p><strong>Data Stored:</strong> Items included in each order and their quantity</p>
+            <p><strong>Fields:</strong></p>
+            <ul>
+                <li>order_item_id (INT, PRIMARY KEY)</li>
+                <li>order_id (INT)</li>
+                <li>item_id (INT)</li>
+                <li>quantity (INT)</li>
+            </ul>
+
+            <h4>Table: Customers</h4>
+            <p><strong>Purpose:</strong> Stores customer information</p>
+            <p><strong>Data Stored:</strong> Contact and login details</p>
+            <p><strong>Fields:</strong></p>
+            <ul>
+                <li>customer_id (INT, PRIMARY KEY)</li>
+                <li>name (VARCHAR)</li>
+                <li>email (VARCHAR)</li>
+                <li>phone (VARCHAR)</li>
+                <li>password (VARCHAR)</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3>App Functions</h3>
+            <ul>
+                <li>Browse menu → SELECT menu items from database</li>
+                <li>Filter menu → SELECT with conditions</li>
+                <li>Add to cart → client-side (JavaScript) + temporary storage</li>
+                <li>Place order → INSERT into Orders and OrderItems</li>
+                <li>Update order status (admin) → UPDATE Orders</li>
+                <li>Manage menu (admin) → INSERT, UPDATE, DELETE MenuItems</li>
+                <li>Login system → authentication using SELECT</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3>Roles of Team Members</h3>
+            <p>Braden Chan, Harry Kwok, Hetarth Parikh, Leon Li, Uzair Sowdagar</p>
+        </div>
+
+        <div class="box">
+            <h3>Wireframes</h3>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <h3>Increments</h3>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <h3>Client Feedback</h3>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
