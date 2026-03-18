@@ -41,8 +41,7 @@
             <h3>Data Description</h3>
             <h4>Table: MenuItems</h4>
             <p><strong>Purpose:</strong> Stores all menu items available to customers</p>
-            <p><strong>Data Stored:</strong> Item name, description, price, image, and availability</p>
-            <p><strong>Fields:</strong></p>
+            <p><strong>Data:</strong></p>
             <ul>
                 <li>item_id (INT, PRIMARY KEY)</li>
                 <li>name (VARCHAR)</li>
@@ -54,8 +53,7 @@
 
             <h4>Table: Orders</h4>
             <p><strong>Purpose:</strong> Stores customer orders</p>
-            <p><strong>Data Stored:</strong> Order details including items, quantities, and status</p>
-            <p><strong>Fields:</strong></p>
+            <p><strong>Data:</strong></p>
             <ul>
                 <li>order_id (INT, PRIMARY KEY)</li>
                 <li>customer_id (INT)</li>
@@ -67,8 +65,7 @@
 
             <h4>Table: OrderItems</h4>
             <p><strong>Purpose:</strong> Links orders to menu items</p>
-            <p><strong>Data Stored:</strong> Items included in each order and their quantity</p>
-            <p><strong>Fields:</strong></p>
+            <p><strong>Data:</strong></p>
             <ul>
                 <li>order_item_id (INT, PRIMARY KEY)</li>
                 <li>order_id (INT)</li>
@@ -78,8 +75,7 @@
 
             <h4>Table: Customers</h4>
             <p><strong>Purpose:</strong> Stores customer information</p>
-            <p><strong>Data Stored:</strong> Contact and login details</p>
-            <p><strong>Fields:</strong></p>
+            <p><strong>Data:</strong></p>
             <ul>
                 <li>customer_id (INT, PRIMARY KEY)</li>
                 <li>name (VARCHAR)</li>
@@ -92,19 +88,25 @@
         <div class="box">
             <h3>App Functions</h3>
             <ul>
-                <li>Browse menu → SELECT menu items from database</li>
-                <li>Filter menu → SELECT with conditions</li>
-                <li>Add to cart → client-side (JavaScript) + temporary storage</li>
-                <li>Place order → INSERT into Orders and OrderItems</li>
-                <li>Update order status (admin) → UPDATE Orders</li>
-                <li>Manage menu (admin) → INSERT, UPDATE, DELETE MenuItems</li>
-                <li>Login system → authentication using SELECT</li>
+                <li>Browse menu - SELECT menu items from database</li>
+                <li>Filter menu - SELECT with conditions</li>
+                <li>Add to cart - client-side (JavaScript) + temporary storage</li>
+                <li>Place order - INSERT into Orders and OrderItems</li>
+                <li>Update order status - UPDATE Orders</li>
+                <li>Manage menu - INSERT, UPDATE, DELETE MenuItems</li>
+                <li>Login system - authentication using SELECT</li>
             </ul>
         </div>
 
         <div class="box">
             <h3>Roles of Team Members</h3>
-            <p>Braden Chan, Harry Kwok, Hetarth Parikh, Leon Li, Uzair Sowdagar</p>
+            <ul>
+                <li>Braden Chan: Frontend</li>
+                <li>Harry Kwok: Frontend</li>
+                <li>Hetarth Parikh: Backend</li>
+                <li>Leon Li: Database</li>
+                <li>Uzair Sowdagar: Database</li>
+            </ul>
         </div>
 
         <div class="box">
@@ -113,8 +115,19 @@
         </div>
 
         <div class="box">
-            <h3>Increments</h3>
-            <p></p>
+            <h3>First Increment</h3>
+            <p>Target Date: March 25, 2026</p>
+            <p>
+                The first increment will deliver a hosted web application with minimal but functional contributions from each team member. The objective is to establish a working system where all core components (frontend, backend, database, and deployment) are integrated.
+            </p>
+            <p>Work:</p>
+            <ul>
+                <li>Braden Chan: Implement Menu page</li>
+                <li>Harry Kwok: Implement home page + CSS</li>
+                <li>Hetarth Parikh: Implement About Us + Location</li>
+                <li>Leon Li: CSS</li>
+                <li>Uzair Sowdagar: Graphics + Logo</li>
+            </ul>
         </div>
 
         <div class="box">
