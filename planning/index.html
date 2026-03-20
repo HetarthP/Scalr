@@ -34,7 +34,11 @@
 
         <div class="box">
             <h3>Purpose</h3>
-            <p>Restaurant App that has online ordering.</p>
+            <p>The purpose of this application is to provide a comprehensive digital platform for a restaurant, integrating online ordering, 
+               an interactive menu, and general information into a single, user-friendly system. Customers will be able to browse menu items, 
+               customize their orders, and place them directly through the app, while also accessing essential details such as location, hours, 
+               and promotions. This product was chosen because of the growing demand for convenient, contactless dining experiences and the 
+               increasing reliance on digital solutions in the food service industry.</p>
         </div>
 
         <div class="box">
@@ -43,45 +47,45 @@
             <p><strong>Purpose:</strong> Stores all menu items available to customers</p>
             <p><strong>Data:</strong></p>
             <ul>
-                <li>item_id (INT, PRIMARY KEY)</li>
-                <li>name (VARCHAR)</li>
-                <li>description (TEXT)</li>
-                <li>price (DECIMAL)</li>
-                <li>image_url (VARCHAR)</li>
-                <li>availability (BOOLEAN)</li>
+                <li>item_id (int)</li>
+                <li>name (string)</li>
+                <li>description (string)</li>
+                <li>price (float)</li>
+                <li>image_url (string)</li>
+                <li>availability (boolean)</li>
             </ul>
 
             <h4>Table: Orders</h4>
             <p><strong>Purpose:</strong> Stores customer orders</p>
             <p><strong>Data:</strong></p>
             <ul>
-                <li>order_id (INT, PRIMARY KEY)</li>
-                <li>customer_id (INT)</li>
-                <li>order_status (VARCHAR)</li>
-                <li>order_type (VARCHAR) (pickup/delivery)</li>
-                <li>total_price (DECIMAL)</li>
-                <li>created_at (DATETIME)</li>
+                <li>order_id (int)</li>
+                <li>customer_id (int)</li>
+                <li>order_status (string)</li>
+                <li>order_type (string) (pickup/delivery)</li>
+                <li>total_price (float)</li>
+                <li>created_at (long)</li>
             </ul>
 
             <h4>Table: OrderItems</h4>
             <p><strong>Purpose:</strong> Links orders to menu items</p>
             <p><strong>Data:</strong></p>
             <ul>
-                <li>order_item_id (INT, PRIMARY KEY)</li>
-                <li>order_id (INT)</li>
-                <li>item_id (INT)</li>
-                <li>quantity (INT)</li>
+                <li>order_item_id (int)</li>
+                <li>order_id (int)</li>
+                <li>item_id (int)</li>
+                <li>quantity (int)</li>
             </ul>
 
             <h4>Table: Customers</h4>
             <p><strong>Purpose:</strong> Stores customer information</p>
             <p><strong>Data:</strong></p>
             <ul>
-                <li>customer_id (INT, PRIMARY KEY)</li>
-                <li>name (VARCHAR)</li>
-                <li>email (VARCHAR)</li>
-                <li>phone (VARCHAR)</li>
-                <li>password (VARCHAR)</li>
+                <li>customer_id (int)</li>
+                <li>name (string)</li>
+                <li>email (string)</li>
+                <li>phone (string)</li>
+                <li>password (string)</li>
             </ul>
         </div>
 
@@ -101,11 +105,11 @@
         <div class="box">
             <h3>Roles of Team Members</h3>
             <ul>
-                <li>Braden Chan: Frontend</li>
-                <li>Harry Kwok: Frontend</li>
-                <li>Hetarth Parikh: Backend</li>
-                <li>Leon Li: Database</li>
-                <li>Uzair Sowdagar: Database</li>
+                <li>Braden Chan: Menu page</li>
+                <li>Harry Kwok: Home page</li>
+                <li>Hetarth Parikh: Online ordering system</li>
+                <li>Leon Li: Contact Information page</li>
+                <li>Uzair Sowdagar: Order Management</li>
             </ul>
         </div>
 
@@ -132,7 +136,10 @@
 
         <div class="box">
             <h3>Client Feedback</h3>
-            <p></p>
+            <p>The client's main feedback focused on simplicity and ease of use. They asked, “Can customers place an order without creating 
+               an account?” and “Will we be able to update the menu quickly if items change?” Based on this, we added a guest checkout option
+               to streamline ordering and planned an admin feature to allow easy menu updates. These changes ensure the app is both 
+               user-friendly and practical for daily restaurant operations.</p>
         </div>
     </div>
 </body>
