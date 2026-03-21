@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Development Plan - Scalr</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="flex-container">
@@ -103,19 +106,62 @@
         </div>
 
         <div class="box">
-            <h3>Roles of Team Members</h3>
+            <h3>Team Member Roles</h3>
+
+            <h4>Harry: UI & Homepage</h4>
             <ul>
-                <li>Braden Chan: Menu page</li>
-                <li>Harry Kwok: Home page</li>
-                <li>Hetarth Parikh: Online ordering system</li>
-                <li>Leon Li: Contact Information page</li>
-                <li>Uzair Sowdagar: Order Management</li>
+                <li>Designs and builds the home page and static information pages (about, contact, hours)</li>
+                <li>Implements responsive layout and overall site navigation using HTML/CSS/JavaScript</li>
+                <li>Uses PHP to load shared components and display basic restaurant information</li>
+                <li>Retrieves and displays restaurant data (hours, contact info) from the database</li>
             </ul>
+            <p><strong>Deliverables:</strong> Home page, contact/info pages, info display</p>
+
+            <h4>Braden: Menu</h4>
+            <ul>
+                <li>Builds dynamic menu page using PHP to retrieve menu items from the database</li>
+                <li>Implements menu filtering and searching using JavaScript</li>
+                <li>Displays item details (name, description, price, image, availability)</li>
+                <li>Handles database queries for MenuItems (SELECT, filtering conditions)</li>
+            </ul>
+            <p><strong>Deliverables:</strong> Menu page, menu display system, filtering/search features, MenuItems database integration</p>
+
+            <h4>Hetarth: Cart & Ordering System</h4>
+            <ul>
+                <li>Implements add-to-cart and cart management using JavaScript</li>
+                <li>Builds checkout system and order summary</li>
+                <li>Uses PHP to store orders in the database (Orders and OrderItems tables)</li>
+                <li>Handles order creation, item quantities, and total price calculations</li>
+            </ul>
+            <p><strong>Deliverables:</strong> Cart system, checkout page, order processing, Orders & OrderItems database functionality</p>
+
+            <h4>Leon: User Login</h4>
+            <ul>
+                <li>Implements login and signup system using PHP</li>
+                <li>Uses JavaScript for form validation and user interaction</li>
+                <li>Manages customer data in the database (Customers table)</li>
+                <li>Connects user accounts to orders and supports secure access</li>
+            </ul>
+            <p><strong>Deliverables:</strong> Login/signup system, authentication logic, customer database management</p>
+
+            <h4>Uzair: Admin Dashboard</h4>
+            <ul>
+                <li>Develops admin dashboard for managing menu items and orders</li>
+                <li>Implements CRUD operations for MenuItems, Orders, and Customers</li>
+                <li>Handles real-time order status updates and admin controls</li>
+                <li>Manages overall database structure and ensures integration across the system</li>
+            </ul>
+            <p><strong>Deliverables:</strong> Admin dashboard, CRUD functionality, order management system, full database integration</p>
         </div>
 
         <div class="box">
             <h3>Wireframes</h3>
-            <p></p>
+
+            <img src="../images/homepage.png" alt="homepage">
+            <img src="../images/menu.png" alt="menu">
+            <img src="../images/info.png" alt="info">
+            <img src="../images/login.png" alt="login">
+            <img src="../images/checkout.png" alt="checkout">
         </div>
 
         <div class="box">
